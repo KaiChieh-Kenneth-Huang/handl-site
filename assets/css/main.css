@@ -1,10 +1,76 @@
 @import url(fontawesome-all.min.css);
+.column {
+	float: left;
+	width: 33.3%;
+	margin-bottom: 16px;
+	padding: 0 8px;
+  }
+  
+  @media screen and (max-width: 650px) {
+	.column {
+	  width: 100%;
+	  display: block;
+	}
+  }
+  
+  .card {
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  }
+  
+  .container {
+	padding: 0 16px;
+  }
+  
+  .container::after, .row::after {
+	content: "";
+	clear: both;
+	display: table;
+  }
+  
+  .title {
+	color: grey;
+  }
+  
+  .button {
+	border: none;
+	outline: 0;
+	display: inline-block;
+	padding: 8px;
+	color: white;
+	background-color: #000;
+	text-align: center;
+	cursor: pointer;
+	width: 100%;
+  }
+  
+.iframe-container {
+	overflow: hidden;
+	padding-top: 40%;
+	position: relative;
+	margin: 0% 20%;
+  }
+@media screen and (max-width: 1024px) {
 
-/*
-	Fractal by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
-*/
+	.iframe-container {
+		padding-top: 56.5%;
+		margin: 0% 0%;
+	}
+
+}
+   
+  .iframe-container iframe {
+	 border: 0;
+	 height: 100%;
+	 top: 0;
+	 left: 0;
+	 position: absolute;
+	 width: 100%;
+  }
+   
+  /* 4x3 Aspect Ratio */
+  .iframe-container-4x3 {
+	padding-top: 75%;
+  }
 
 html, body, div, span, applet, object,
 iframe, h1, h2, h3, h4, h5, h6, p, blockquote,
@@ -3611,7 +3677,7 @@ input, select, textarea {
 /* Header */
 
 	#header {
-		background-color: #4696e5;
+		background-color: rgba(47, 0, 114, 0.712);
 		color: #d1e5f9;
 		padding: 4.5em 0 2.5em 0 ;
 		-moz-align-items: center;
